@@ -1,0 +1,50 @@
+.KInput-wrapper {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #949494;
+    border-radius: 5px 5px 0 0;
+    background: #F0F0F0;
+    padding: 15px 15px 0 15px;
+}
+input:focus {
+    outline: none;
+}
+
+.KInput-label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 20px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ .KInput-label,
+input:not(:placeholder-shown) ~ .KInput-label {
+    top: 5px;
+    left: 17px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.KInput-error {
+    font-size: 14px;
+    height: 18px;
+    line-height: .9;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    color: rgba(255, 0, 0, 0.91);
+    text-align: left;
+}
