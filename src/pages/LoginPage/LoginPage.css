@@ -1,0 +1,11 @@
+.login-page {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page>div {
+    width: 500px;
+}
